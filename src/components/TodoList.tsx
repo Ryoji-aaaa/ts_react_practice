@@ -5,12 +5,10 @@ interface TodoListProps {
 }
 
 const TodoList: React.FC<TodoListProps> = props => {
-  const todos = [{ id: "t1", text: "Finish the course" }];
-
   return (
     <ul>
-      {props.items.map((todo) => (
-        <li key={todo.id}>{todo.text}</li>
+      {props.items.map((todos) => (
+        <li key={todos.id}>{todos.text}</li>
       ))}
     </ul>
   );
